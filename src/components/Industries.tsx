@@ -12,7 +12,7 @@ const industries = [
 
 const Industries = () => {
   return (
-    <section className="py-12 md:py-24 bg-gray-50 dark:bg-gray-800">
+    <section id="industries" className="py-12 md:py-24 bg-gray-50 dark:bg-gray-800">
       <div className="container">
         <h2 className="text-3xl font-bold text-center mb-2">Industries We Serve</h2>
         <p className="text-center text-gray-600 dark:text-gray-400 mb-12">Tailored ERP + AI solutions for your specific business needs.</p>

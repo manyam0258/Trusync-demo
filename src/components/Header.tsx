@@ -6,6 +6,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 const navLinks = [
   { name: "Home", href: "#home" },
   { name: "Services", href: "#services" },
+  { name: "Industries", href: "#industries" },
   { name: "About", href: "#about" },
   { name: "Contact", href: "#contact" },
 ];
@@ -26,10 +27,11 @@ const Header = () => {
       <div className="container flex h-14 items-center">
         <div className="mr-4 flex items-center">
           <a href="/" className="mr-6 flex items-center space-x-2">
-            <span className="font-bold">Trusync Technologies</span>
+            <img src="/placeholder.svg" alt="Trusync Logo" className="h-6 w-auto" />
+            <span className="font-bold hidden sm:inline-block">Trusync Technologies</span>
           </a>
         </div>
-        <nav className="hidden items-center space-x-6 text-sm font-medium md:flex">
+        <nav className="hidden items-center space-x-8 text-sm font-medium md:flex">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -55,6 +57,7 @@ const Header = () => {
             <SheetContent side="right">
               <div className="flex flex-col space-y-4 p-6">
                 <a href="/" className="mb-4 flex items-center space-x-2">
+                   <img src="/placeholder.svg" alt="Trusync Logo" className="h-7 w-auto" />
                   <span className="font-bold text-lg">Trusync Technologies</span>
                 </a>
                 {navLinks.map((link) => (
