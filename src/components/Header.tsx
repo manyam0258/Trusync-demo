@@ -26,9 +26,8 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 items-center">
         <div className="mr-4 flex items-center">
-          <a href="/" className="mr-6 flex items-center space-x-2">
-            <img src="/logo.png" alt="Trusync Logo" className="h-6 w-auto" />
-            <span className="font-bold hidden sm:inline-block">Trusync Technologies</span>
+          <a href="/" className="mr-6 flex items-center">
+            <img src="/logo.png" alt="Trusync Logo" className="h-10 w-auto" />
           </a>
         </div>
         <nav className="hidden items-center space-x-8 text-sm font-medium md:flex">
@@ -56,9 +55,8 @@ const Header = () => {
             </SheetTrigger>
             <SheetContent side="right">
               <div className="flex flex-col space-y-4 p-6">
-                <a href="/" className="mb-4 flex items-center space-x-2">
-                   <img src="/logo.png" alt="Trusync Logo" className="h-7 w-auto" />
-                  <span className="font-bold text-lg">Trusync Technologies</span>
+                <a href="/" className="mb-4 flex items-center">
+                   <img src="/logo.png" alt="Trusync Logo" className="h-10 w-auto" />
                 </a>
                 {navLinks.map((link) => (
                   <a
