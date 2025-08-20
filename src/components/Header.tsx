@@ -24,13 +24,13 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
+      <div className="container flex h-20 items-center">
         <div className="mr-4 flex items-center">
           <a href="/" className="mr-6 flex items-center">
-            <img src="/logo.png" alt="Trusync Logo" className="h-12 w-auto" />
+            <img src="/logo.png" alt="Trusync Logo" className="h-16 w-auto" />
           </a>
         </div>
-        <nav className="hidden items-center space-x-8 text-sm font-medium md:flex">
+        <nav className="hidden items-center space-x-8 text-base font-medium md:flex">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -56,7 +56,7 @@ const Header = () => {
             <SheetContent side="right">
               <div className="flex flex-col space-y-4 p-6">
                 <a href="/" className="mb-4 flex items-center">
-                   <img src="/logo.png" alt="Trusync Logo" className="h-12 w-auto" />
+                   <img src="/logo.png" alt="Trusync Logo" className="h-16 w-auto" />
                 </a>
                 {navLinks.map((link) => (
                   <a
