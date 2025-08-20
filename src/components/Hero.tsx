@@ -63,7 +63,7 @@ const Hero = () => {
                     {slide.highlight && <p className="font-semibold mb-4">{slide.highlight}</p>}
                     {slide.features && <p className="mb-4">{slide.features}</p>}
                     {slide.industries && <p className="mb-4">{slide.industries}</p>}
-                    <Button size="lg" className="bg-blue-800 hover:bg-blue-700 text-white">
+                    <Button size="lg" className="bg-foreground text-background hover:bg-foreground/90">
                       {slide.cta}
                     </Button>
                   </div>

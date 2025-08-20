@@ -15,13 +15,13 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex space-x-4">
-            <a href="#" className="text-gray-600 hover:text-blue-800 dark:text-gray-400 dark:hover:text-white">
+            <a href="#" className="text-gray-600 hover:text-foreground dark:text-gray-400 dark:hover:text-white">
               <Twitter />
             </a>
-            <a href="#" className="text-gray-600 hover:text-blue-800 dark:text-gray-400 dark:hover:text-white">
+            <a href="#" className="text-gray-600 hover:text-foreground dark:text-gray-400 dark:hover:text-white">
               <Github />
             </a>
-            <a href="#" className="text-gray-600 hover:text-blue-800 dark:text-gray-400 dark:hover:text-white">
+            <a href="#" className="text-gray-600 hover:text-foreground dark:text-gray-400 dark:hover:text-white">
               <Linkedin />
             </a>
           </div>
