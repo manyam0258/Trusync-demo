@@ -27,7 +27,7 @@ const Header = () => {
       <div className="container flex h-14 items-center">
         <div className="mr-4 flex items-center">
           <a href="/" className="mr-6 flex items-center space-x-2">
-            <img src="/placeholder.svg" alt="Trusync Logo" className="h-6 w-auto" />
+            <img src="/logo.png" alt="Trusync Logo" className="h-6 w-auto" />
             <span className="font-bold hidden sm:inline-block">Trusync Technologies</span>
           </a>
         </div>
@@ -57,7 +57,7 @@ const Header = () => {
             <SheetContent side="right">
               <div className="flex flex-col space-y-4 p-6">
                 <a href="/" className="mb-4 flex items-center space-x-2">
-                   <img src="/placeholder.svg" alt="Trusync Logo" className="h-7 w-auto" />
+                   <img src="/logo.png" alt="Trusync Logo" className="h-7 w-auto" />
                   <span className="font-bold text-lg">Trusync Technologies</span>
                 </a>
                 {navLinks.map((link) => (

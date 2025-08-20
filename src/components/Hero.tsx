@@ -13,35 +13,28 @@ const slides = [
     headline: "Transforming Businesses with Smart ERP & AI Automation",
     subtext: "Your trusted Frappe partner in Hyderabad",
     cta: "Discover Our Solutions",
-    img: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2832&auto=format&fit=crop",
+    img: "/carousel-1.jpg",
   },
   {
     headline: "ERPNext Implementation Made Simple",
     subtext: "Streamline operations across Manufacturing, Healthcare, Education & more",
     highlight: "✓ Certified Frappe Partners ✓ 6+ Industries ✓ Local Support",
     cta: "Explore ERPNext",
-    img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2670&auto=format&fit=crop",
+    img: "/carousel-2.jpg",
   },
   {
     headline: "Intelligent Automation for Modern Businesses",
     subtext: "Reduce manual work by 70% with AI-powered workflows",
     features: "• Document Processing • Predictive Analytics • Smart Chatbots",
     cta: "See AI Solutions",
-    img: "https://images.unsplash.com/photo-1620712943543-2858200e94b1?q=80&w=2767&auto=format&fit=crop",
+    img: "/carousel-3.jpg",
   },
   {
     headline: "Expertise Across Every Industry",
     subtext: "Tailored solutions for your specific business needs",
     industries: "Manufacturing | Healthcare | Education | Services | HRMS | Real Estate",
     cta: "View Industries",
-    img: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2670&auto=format&fit=crop",
-  },
-  {
-    headline: "Hyderabad's Premier ERP & AI Partner",
-    subtext: "Local expertise, global standards, personalized service",
-    benefits: "Same timezone • On-site support • Cultural understanding",
-    cta: "Contact Us Today",
-    img: "https://images.unsplash.com/photo-1583342920434-247a34475d8a?q=80&w=2670&auto=format&fit=crop",
+    img: "/carousel-4.jpg",
   },
 ];
 
@@ -70,7 +63,6 @@ const Hero = () => {
                     {slide.highlight && <p className="font-semibold mb-4">{slide.highlight}</p>}
                     {slide.features && <p className="mb-4">{slide.features}</p>}
                     {slide.industries && <p className="mb-4">{slide.industries}</p>}
-                    {slide.benefits && <p className="mb-4">{slide.benefits}</p>}
                     <Button size="lg" className="bg-blue-800 hover:bg-blue-700 text-white">
                       {slide.cta}
                     </Button>
