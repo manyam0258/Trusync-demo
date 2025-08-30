@@ -18,9 +18,9 @@ const Industries = () => {
         <p className="text-center text-gray-600 dark:text-gray-400 mb-12">Tailored ERP + AI solutions for your specific business needs.</p>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
           {industries.map((industry) => (
-            <Card key={industry.name} className="text-center hover:shadow-lg hover:border-foreground transition-all duration-300">
+            <Card key={industry.name} className="text-center hover:shadow-lg hover:border-primary transition-all duration-300">
               <CardHeader>
-                <industry.icon className="h-12 w-12 mx-auto mb-4 text-foreground" />
+                <industry.icon className="h-12 w-12 mx-auto mb-4 text-primary" />
                 <CardTitle className="text-lg">{industry.name}</CardTitle>
               </CardHeader>
               <CardContent>

@@ -52,7 +52,7 @@ const Services = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {mainServices.map(service => (
                 <div key={service} className="flex items-center space-x-2">
-                  <CheckCircle className="h-5 w-5 text-foreground" />
+                  <CheckCircle className="h-5 w-5 text-primary" />
                   <span>{service}</span>
                 </div>
               ))}
@@ -62,7 +62,7 @@ const Services = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
               {aiSolutions.map(service => (
                 <div key={service} className="flex items-center space-x-2">
-                  <CheckCircle className="h-5 w-5 text-foreground" />
+                  <CheckCircle className="h-5 w-5 text-primary" />
                   <span>{service}</span>
                 </div>
               ))}

@@ -57,21 +57,21 @@ const Contact = () => {
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">Get in Touch</h3>
             <div className="flex items-start space-x-4">
-              <MapPin className="h-6 w-6 text-foreground mt-1" />
+              <MapPin className="h-6 w-6 text-primary mt-1" />
               <div>
                 <h4 className="font-semibold">Address</h4>
                 <p className="text-gray-600 dark:text-gray-400">123 Tech Park, Hitech City, Hyderabad, Telangana, India</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
-              <Mail className="h-6 w-6 text-foreground mt-1" />
+              <Mail className="h-6 w-6 text-primary mt-1" />
               <div>
                 <h4 className="font-semibold">Email</h4>
                 <p className="text-gray-600 dark:text-gray-400">info@trusync.com</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
-              <Phone className="h-6 w-6 text-foreground mt-1" />
+              <Phone className="h-6 w-6 text-primary mt-1" />
               <div>
                 <h4 className="font-semibold">Phone</h4>
                 <p className="text-gray-600 dark:text-gray-400">+91-12345-67890</p>
@@ -107,7 +107,7 @@ const Contact = () => {
                 <FormField control={form.control} name="message" render={({ field }) => (
                   <FormItem><FormLabel>Message</FormLabel><FormControl><Textarea placeholder="How can we help you?" {...field} /></FormControl><FormMessage /></FormItem>
                 )} />
-                <Button type="submit" className="w-full bg-foreground text-background hover:bg-foreground/90">Submit</Button>
+                <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">Submit</Button>
               </form>
             </Form>
           </div>

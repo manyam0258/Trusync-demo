@@ -39,7 +39,7 @@ const Header = () => {
                 e.preventDefault();
                 scrollToSection(link.href);
               }}
-              className="transition-colors hover:text-foreground/80 text-foreground"
+              className="transition-colors hover:text-primary text-foreground"
             >
               {link.name}
             </a>
@@ -66,7 +66,7 @@ const Header = () => {
                       e.preventDefault();
                       scrollToSection(link.href);
                     }}
-                    className="text-lg text-foreground"
+                    className="text-lg text-foreground hover:text-primary"
                   >
                     {link.name}
                   </a>

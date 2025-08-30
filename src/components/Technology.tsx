@@ -34,7 +34,7 @@ const Technology = () => {
           {technologies.map((tech) => (
             <Card key={tech.name} className="text-center hover:shadow-lg hover:-translate-y-2 transition-transform duration-300">
               <CardHeader>
-                <tech.icon className="h-12 w-12 mx-auto mb-4 text-foreground" />
+                <tech.icon className="h-12 w-12 mx-auto mb-4 text-primary" />
                 <CardTitle>{tech.name}</CardTitle>
               </CardHeader>
               <CardContent>
