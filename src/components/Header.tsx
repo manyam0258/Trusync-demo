@@ -30,50 +30,52 @@ const Header = () => {
             <img src="/logo.png" alt="Trusync Logo" className="h-20 w-auto" />
           </a>
         </div>
-        <nav className="hidden items-center space-x-8 text-lg font-medium md:flex">
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToSection(link.href);
-              }}
-              className="transition-colors hover:text-primary text-foreground"
-            >
-              {link.name}
-            </a>
-          ))}
-        </nav>
-        <div className="flex flex-1 items-center justify-end space-x-4">
-          <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" className="md:hidden">
-                <Menu className="h-6 w-6" />
-                <span className="sr-only">Open Menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right">
-              <div className="flex flex-col space-y-4 p-6">
-                <a href="/" className="mb-4 flex items-center">
-                   <img src="/logo.png" alt="Trusync Logo" className="h-20 w-auto" />
-                </a>
-                {navLinks.map((link) => (
-                  <a
-                    key={link.name}
-                    href={link.href}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      scrollToSection(link.href);
-                    }}
-                    className="text-lg text-foreground hover:text-primary"
-                  >
-                    {link.name}
+        <div className="flex flex-1 items-center justify-end space-x-8">
+          <nav className="hidden items-center space-x-8 text-lg font-medium md:flex">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection(link.href);
+                }}
+                className="transition-colors hover:text-primary text-foreground"
+              >
+                {link.name}
+              </a>
+            ))}
+          </nav>
+          <div className="md:hidden">
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Open Menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right">
+                <div className="flex flex-col space-y-4 p-6">
+                  <a href="/" className="mb-4 flex items-center">
+                    <img src="/logo.png" alt="Trusync Logo" className="h-20 w-auto" />
                   </a>
-                ))}
-              </div>
-            </SheetContent>
-          </Sheet>
+                  {navLinks.map((link) => (
+                    <a
+                      key={link.name}
+                      href={link.href}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        scrollToSection(link.href);
+                      }}
+                      className="text-lg text-foreground hover:text-primary"
+                    >
+                      {link.name}
+                    </a>
+                  ))}
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </div>
     </header>
