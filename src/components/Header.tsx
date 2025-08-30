@@ -54,7 +54,7 @@ const Header = () => {
                   <span className="sr-only">Open Menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right">
+              <SheetContent side="center">
                 <div className="flex flex-col space-y-4 p-6">
                   <a href="/" className="mb-4 flex items-center">
                     <img src="/logo.png" alt="Trusync Logo" className="h-20 w-auto" />
