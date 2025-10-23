@@ -15,6 +15,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { toast } from "sonner";
 import { Mail, MapPin, Phone } from "lucide-react";
+import { supabase } from "@/lib/supabase";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -40,10 +41,23 @@ const Contact = () => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast.success("Message sent! We'll get back to you soon.");
-    form.reset();
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const { data, error } = await supabase
+        .from('contact_us')
+        .insert([values]);
+
+      if (error) {
+        throw error;
+      }
+
+      toast.success("Message sent! We'll get back to you soon.");
+      form.reset();
+    } catch (error) {
+        const supabaseError = error as { message?: string };
+        console.error("Error submitting form:", supabaseError);
+        toast.error(`Error: ${supabaseError.message || "Something went wrong."}`);
+    }
   }
 
   return (
@@ -89,6 +103,12 @@ const Contact = () => {
                 )} />
                 <FormField control={form.control} name="phone" render={({ field }) => (
                   <FormItem><FormLabel>Phone (Optional)</FormLabel><FormControl><Input placeholder="+91-..." {...field} /></FormControl><FormMessage /></FormItem>
+                )} />
+                 <FormField control={form.control} name="company" render={({ field }) => (
+                  <FormItem><FormLabel>Company (Optional)</FormLabel><FormControl><Input placeholder="Your Company" {...field} /></FormControl><FormMessage /></FormItem>
+                )} />
+                 <FormField control={form.control} name="industry" render={({ field }) => (
+                  <FormItem><FormLabel>Industry (Optional)</FormLabel><FormControl><Input placeholder="Your Industry" {...field} /></FormControl><FormMessage /></FormItem>
                 )} />
                 <FormField control={form.control} name="interest" render={({ field }) => (
                   <FormItem>
