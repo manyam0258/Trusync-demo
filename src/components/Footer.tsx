@@ -11,7 +11,7 @@ const Footer = () => {
               Hyderabad, Telangana, India
             </p>
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              surendhranath@trusync.com | +918143483438
+              surendhranath@trusync.in | +918143483438
             </p>
           </div>
           <div className="flex space-x-4">
