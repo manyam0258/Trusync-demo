@@ -74,21 +74,21 @@ const Contact = () => {
               <MapPin className="h-6 w-6 text-primary mt-1" />
               <div>
                 <h4 className="font-semibold">Address</h4>
-                <p className="text-gray-600 dark:text-gray-400">123 Tech Park, Hitech City, Hyderabad, Telangana, India</p>
+                <p className="text-gray-600 dark:text-gray-400">H.No. 30-265/25/56A/S-2, Sai Plaza, Neredmet, Hyderabad, Tirumalagiri, Telangana 500056, India</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <Mail className="h-6 w-6 text-primary mt-1" />
               <div>
                 <h4 className="font-semibold">Email</h4>
-                <p className="text-gray-600 dark:text-gray-400">info@trusync.com</p>
+                <p className="text-gray-600 dark:text-gray-400">surendhranath@trusync.in</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <Phone className="h-6 w-6 text-primary mt-1" />
               <div>
                 <h4 className="font-semibold">Phone</h4>
-                <p className="text-gray-600 dark:text-gray-400">+91-12345-67890</p>
+                <p className="text-gray-600 dark:text-gray-400">+918143483438</p>
               </div>
             </div>
           </div>

@@ -6,12 +6,12 @@ const Footer = () => {
       <div className="container mx-auto py-8 px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-center md:text-left mb-4 md:mb-0">
-            <h3 className="text-lg font-bold">Trusync Technologies LLP</h3>
+            <h3 className="text-lg font-bold">Trusync Technologies</h3>
             <p className="text-sm text-gray-600 dark:text-gray-400">
               Hyderabad, Telangana, India
             </p>
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              info@trusync.com | +91-XXXXX-XXXXX
+              surendhranath@trusync.com | +918143483438
             </p>
           </div>
           <div className="flex space-x-4">
@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 border-t border-gray-200 dark:border-gray-700 pt-4 text-center text-sm text-gray-500 dark:text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Trusync Technologies LLP. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} TRUSYNC TECHNOLOGIES LLP. All rights reserved.</p>
         </div>
       </div>
     </footer>
